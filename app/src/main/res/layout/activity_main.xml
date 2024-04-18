@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@drawable/image"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to my app"
+        android:id="@+id/introTextView"
+        style="@style/TextViewsStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Account"
+        style="@style/TextViewsStyle"
+        android:id="@+id/intro2TextView" />
+
+    <EditText
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:hint="User Name"
+        android:id="@+id/nameEditText"
+        android:inputType="textPersonName"
+        android:textColorHint="#FFFFFF"/>
+
+    <EditText
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:hint="Password"
+        android:id="@+id/passEditText"
+        android:inputType="textPassword"
+        android:textColorHint="#FFFFFF"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="Remember me"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:id="@+id/rememberChk"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Enter"
+        android:layout_gravity="center"
+        android:id="@+id/enterBtn"
+        android:textSize="20dp"
+        android:onClick="btnLoginOnClick"/>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
